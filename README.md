@@ -14,6 +14,7 @@ Version history:
 - Unescaped the special characters in song urls.
 - Limited the title/artist/album length to 35 characters.
 - Replaced the placeholder icon.
+
 1.01 (May 13, 2023)
 - Increased the displayed character limit for artist and album tags. First release.
 
