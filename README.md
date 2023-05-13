@@ -12,6 +12,7 @@ Version history:
 - Switched track title and artist fields.
 - Added a background.
 - Unescaped the special characters in song urls.
+- Limited the title/artist/album length to 35 characters.
 
 Known issues:
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well.
