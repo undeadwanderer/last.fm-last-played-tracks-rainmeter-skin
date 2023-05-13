@@ -2,8 +2,8 @@
 Code for a Rainmeter skin that displays last 1, 2, 3, 4, 5, or 10 scrobbled tracks in Rainmeter. Fork of "Watcha listenin' 2" by Blaise.
 
 Credits:
-[Blaise](https://www.deviantart.com/squadrmskin) for [Last.fm Rainmeter Skin VERSION 2.0](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568).
-[Rochak Shukla](https://www.freepik.com/author/rochakshukla) for [the placeholder icon](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm).
+- [Blaise](https://www.deviantart.com/squadrmskin) for [Last.fm Rainmeter Skin VERSION 2.0](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568).
+- [Rochak Shukla](https://www.freepik.com/author/rochakshukla) for [the placeholder icon](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm).
 
 Version history:
 1.0 (May 13, 2023)
