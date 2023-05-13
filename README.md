@@ -7,7 +7,7 @@ Credits:
 
 Version history:
 1.0 (May 13, 2023)
-- Initial release.
+- Initial commit.
 - Updated the original skin (small version only) to support up to 10 last played tracks.
 - Switched track title and artist fields.
 - Added a background.
