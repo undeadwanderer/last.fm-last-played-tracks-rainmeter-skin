@@ -20,3 +20,4 @@ Version history:
 
 Known issues:
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well.
+- The username needs to be set for each variant separately. Unfortunately, I don't see how I can resolve this. The original skin asked to input a username 3 times during editing in any variant.
