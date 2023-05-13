@@ -1,5 +1,5 @@
 # last.fm-last-played-tracks-rainmeter-skin
-Displays last 1, 2, 3, 4, 5, or 10 scrobbled tracks in Rainmeter. Fork of "Last.fm Rainmeter Skin VERSION 2.0" by Blaise.
+Code for a Rainmeter skin that displays last 1, 2, 3, 4, 5, or 10 scrobbled tracks in Rainmeter. Fork of "Watcha listenin' 2" by Blaise.
 
 Version history:
 1.0 (May 13, 2023)
