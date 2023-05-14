@@ -6,6 +6,7 @@ Credits:
 - [Rochak Shukla](https://www.freepik.com/author/rochakshukla) for [the placeholder icon](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm).
 
 Version history:
+
 1.0 (May 13, 2023)
 - Initial commit.
 - Updated the original skin (small version only) to support up to 10 last played tracks.
@@ -21,3 +22,8 @@ Version history:
 Known issues:
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well.
 - The username needs to be set for each variant separately. Unfortunately, I don't see how I can resolve this. The original skin asked to input a username 3 times during editing in any variant.
+
+To do:
+- Make a right-aligned version.
+- Make variants for more tracks (I only have a 1080p display so I can't test all of them)
+- Fork different sized versions of the original skin, I only used the small version.
