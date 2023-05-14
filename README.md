@@ -20,7 +20,7 @@ Version history:
 - Increased the displayed character limit for artist and album tags. First release.
 
 1.02 / May 14, 2023
-- Made the first track's font color red if it's the currently playing track or white if it isn't.
+- Made the first track's font color red if it's the "now playing" track or white if it isn't.
 
 Known issues:
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well.
