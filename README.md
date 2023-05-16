@@ -9,12 +9,14 @@ Version history:
 
 1.0 / May 13, 2023
 - Initial commit.
+Changes from the original skin:
 - Updated the original skin (small version only) to support up to 10 last played tracks.
 - Switched track title and artist fields.
 - Added a background.
-- Unescaped the special characters in song urls.
+- Unescaped the special characters in track urls.
 - Limited the title/artist/album length to 35 characters.
 - Replaced the placeholder icon.
+- Changed the first track's title font color to red.
 
 1.01 / May 13, 2023
 - Increased the displayed character limit for artist and album tags. First release.
