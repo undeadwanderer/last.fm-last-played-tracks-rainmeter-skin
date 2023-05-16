@@ -26,7 +26,7 @@ Known issues:
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well.
 - The username needs to be set for each variant separately. Unfortunately, I don't see how I can resolve this. The original skin asked to input a username 3 times during editing in any variant.
 
-To do:
+To possibly do:
 - Make a right-aligned version.
 - Make variants for more tracks (I only have a 1080p display so I can't test all of them)
 - Fork different sized versions of the original skin, I only used the small version.
