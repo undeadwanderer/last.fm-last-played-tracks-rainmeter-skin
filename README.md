@@ -30,3 +30,4 @@ To do:
 - Make a right-aligned version.
 - Make variants for more tracks (I only have a 1080p display so I can't test all of them)
 - Fork different sized versions of the original skin, I only used the small version.
+- Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my skills and API access level atm.
