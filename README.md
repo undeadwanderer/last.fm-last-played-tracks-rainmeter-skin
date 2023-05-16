@@ -14,9 +14,7 @@ Version history:
 - Increased the displayed character limit for artist and album tags. First release.
 
 1.0 / May 13, 2023
-- Initial commit.
-
-Changes from the original skin:
+- Initial commit. Changes from the original skin:
 - Updated the original skin (small version only) to support up to 10 last played tracks.
 - Switched track title and artist fields.
 - Added a background.
