@@ -32,7 +32,7 @@ Version history:
 - Changed the first track's title font color to red.
 
 Known issues:
-- The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well.
+- The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
 - The username needs to be set for each variant separately. Unfortunately, I don't see how I can resolve this. The original skin asked to input a username 3 times during editing in any variant, for each variant.
 - The 15, 16, 17 and 18 tracks versions might take more time to load the album images.
 
