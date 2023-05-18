@@ -7,6 +7,9 @@ Credits:
 
 Version history:
 
+1.031 / May 18, 2023
+- Bug fix (Missing album art in track 12).
+
 1.03 / May 18, 2013
 - Made variants for 15, 16, 17 tracks (1080p screen minus taskbar), and 18 tracks (maximum that fits into a 1080p screen). Not sure if I can do more tracks since there's no way for me to test it plus there's a limit in the WebParser plugin for the number of parsed strings.
 - The skin now parses higher res album images.
