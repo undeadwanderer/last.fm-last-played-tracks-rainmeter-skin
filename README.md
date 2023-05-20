@@ -12,7 +12,7 @@ Version history:
 
 1.03 / May 18, 2013
 - Made variants for 15, 16, 17 tracks (1080p screen minus taskbar), and 18 tracks (the maximum that fits into a 1080p screen). Not sure if I can do more tracks since there's no way for me to test it plus there's a limit in the WebParser plugin for the number of parsed strings and I have no knowliedge of LUA.
-- The skin now parses higher res album images.
+- The skin now fetches higher res album images.
 - Changed the title/album/artist length limiting method from a string length regex to a meter width limit with string clipping.
 
 1.02 / May 14, 2023
