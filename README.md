@@ -45,7 +45,7 @@ Version history:
 Known issues:
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
 - The username needs to be set for each variant separately. Unfortunately, I don't see how I can resolve this. The original skin asked to input a username 3 times during editing in any variant, for each variant.
-- The variants with more the 5 tracks are not very stable, use them on your own risk.
+- The variants with more than 5 tracks are not very stable, use them on your own risk.
 - The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them not appear on every single tick but couldn't get rid of them entirely yet.
 
 To potentially do:
