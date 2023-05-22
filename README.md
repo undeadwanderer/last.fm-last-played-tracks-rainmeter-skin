@@ -14,6 +14,10 @@ How to use:
 
 Version history:
 
+1.05 / May 22, 2023
+- Added artist/album/track links to the corresponding fields.
+- Added a "View profile" link.
+
 1.04 / May 22, 2023
 - Stopped the skin from downloading a new image every tick if the image url hasn't changed from the previous tick.
 - Split the main regex into smaller regexes for each measure, for optimization. Since this refuces the string indices this might also allow to add support for more tracks in the future.
@@ -51,8 +55,7 @@ Known issues:
 
 To potentially do:
 - Make a right-aligned version.
-- Make variants for other track counts (I only have 1080p displays so I can't test the variants that exceed that height)
-- Fork different sized versions of the original skin, I only used the small version.
+- Make variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
+- Fork different sized versions of the original skin, I only used the small version. Maybe make a smaller sized version.
 - Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my skill and API access level atm.
-- Looking into the possibility of implementing the artist, album, and user profile links.
-- Make the background color modifiable more easily.
+- Make the background color modifiable more easily. And/or a separate config file.
