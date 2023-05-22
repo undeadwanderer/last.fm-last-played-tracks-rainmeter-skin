@@ -5,7 +5,18 @@ Credits:
 - [Blaise](https://www.deviantart.com/squadrmskin) for ["Last.fm Rainmeter Skin VERSION 2.0"](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568).
 - [Rochak Shukla](https://www.freepik.com/author/rochakshukla) for the ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon used as a "no album" placeholder image.
 
+Requirements:
+Rainmeter v4.5, I've only tested this skin in this vertion so I've no idea how if it will run in older versions.
+
+How to use:
+Click the "Click here to set the username, then refresh the skin." text to set the last.fm username. This needs to be done separately for each variant.
+
 Version history:
+
+1.04 / May 22, 2023
+- Stopped the skin from downloading a new image every tick if the image url hasn't changed from the previous tick.
+- Split the main regex into smaller regexes for each measure, for optimization. Since this refuces the string indices this might allow to add support for more tracks in the future.
+- Reduced the number of "url is empty" errors.
 
 1.031 / May 18, 2023
 - Bug fix (Missing album art in track 12).
@@ -34,10 +45,13 @@ Version history:
 Known issues:
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
 - The username needs to be set for each variant separately. Unfortunately, I don't see how I can resolve this. The original skin asked to input a username 3 times during editing in any variant, for each variant.
-- The 15, 16, 17 and 18 tracks versions might take more time to load the album images.
+- The variants with more the 5 tracks are not very stable, use them on your own risk.
+- The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them not appear on every single tick but couldn't get rid of them entirely yet.
 
 To potentially do:
 - Make a right-aligned version.
 - Make variants for other track counts (I only have 1080p displays so I can't test the variants that exceed that height)
 - Fork different sized versions of the original skin, I only used the small version.
 - Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my skill and API access level atm.
+- Looking into the possibility of implementing the artist, album, and user profile links.
+- Make the background color modifiable more easily.
