@@ -15,7 +15,7 @@ Version history:
 
 1.04 / May 22, 2023
 - Stopped the skin from downloading a new image every tick if the image url hasn't changed from the previous tick.
-- Split the main regex into smaller regexes for each measure, for optimization. Since this refuces the string indices this might allow to add support for more tracks in the future.
+- Split the main regex into smaller regexes for each measure, for optimization. Since this refuces the string indices this might also allow to add support for more tracks in the future.
 - Reduced the number of "url is empty" errors.
 
 1.031 / May 18, 2023
