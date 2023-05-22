@@ -6,10 +6,11 @@ Credits:
 - [Rochak Shukla](https://www.freepik.com/author/rochakshukla) for the ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon used as a "no album" placeholder image.
 
 Requirements:
-Rainmeter v4.5, I've only tested the skin in this vertion so I've no idea how if it will run in older versions.
+- Rainmeter v4.5, I've only tested the skin in this vertion so I've no idea how if it will run in older versions.
 
 How to use:
-Click the "Click here to set the username, then refresh the skin." text to set the last.fm username. This needs to be done separately for each variant.
+- Click the "Click here to set the username, then refresh the skin." text to set the last.fm username. This needs to be done separately for each variant.
+- The background color and transparency can be changed in the .ini files in the option "SolidColor" in the [MeasureBackground] measure.
 
 Version history:
 
