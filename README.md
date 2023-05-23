@@ -24,7 +24,7 @@ How to use:
 Version history:
 
 1.07 / May 23, 2023
-- The skin now has only one variant with a config skin where you can choose how many tracks to show and the background cover. See "how to use" for more information.
+- Reworked the skin, now it has only one variant with a config skin where you can choose how many tracks to show and the background cover. See "how to use" for more information.
 
 1.061 / May 23, 2023
 - Changed the click actions for username and the first album color, see "How to use" for more information.
@@ -73,8 +73,6 @@ Known issues:
 - The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet.
 
 To potentially do:
-- Merge all variants into a single configurable variant.
-- Switch around mouse actions in the username/"View Profile"/album cover meters.
 - Make a right-aligned version.
 - Make variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
 - Fork different sized versions of the original skin, I only used the small version. Maybe make a smaller sized version.
