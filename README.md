@@ -15,10 +15,17 @@ Requirements:
 - Tested in Rainmeter v4.5, not sure if it will run in older versions.
 
 How to use:
-- Click the "Click here to set the username, then refresh the skin." text to set the last.fm username.
-- Middle-click the username to change the background color and transparency.
+- Middle-click the "Click here to set the username, then refresh the skin." text to set the last.fm username.
+- Middle-click the first track image to change the background color and transparency.
+- To switch between different number of displayed tracks open the context menu and pick the variant you want in the "Variants" submenu.
+- Click the username to go to the profile.
+- Click the track title or album cover to go to the track page.
+- Click on artist name or album name to go to the artist or album page respectively.
 
 Version history:
+
+1.061 / May 23, 2023
+- Changed the click actions for username and the first album color, see "How to use".
 
 1.06 / May 23, 2023
 - Moved the username and background color values into a separate config file.
