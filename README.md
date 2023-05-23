@@ -16,13 +16,15 @@ Requirements:
 
 How to use:
 - Middle-click the "Click here to set the username, then refresh the skin." text to set the last.fm username.
-- Middle-click the first track image to change the background color and transparency.
-- To switch between different number of displayed tracks open the context menu and pick the variant you want in the "Variants" submenu.
-- Click the username to go to the profile.
+- Middle-click the first track image or title to change the number of displayed tracks and background color/transparency.
+- Click the username to go to the profile page.
 - Click the track title or album cover to go to the track page.
 - Click on artist name or album name to go to the artist or album page respectively.
 
 Version history:
+
+1.07 / May 23, 2023
+- The skin now has only one variant with a config skin where you can choose how many tracks to show and the background cover. See "how to use" for more information.
 
 1.061 / May 23, 2023
 - Changed the click actions for username and the first album color, see "How to use" for more information.
