@@ -25,7 +25,7 @@ How to use:
 Version history:
 
 1.061 / May 23, 2023
-- Changed the click actions for username and the first album color, see "How to use".
+- Changed the click actions for username and the first album color, see "How to use" for more information.
 
 1.06 / May 23, 2023
 - Moved the username and background color values into a separate config file.
