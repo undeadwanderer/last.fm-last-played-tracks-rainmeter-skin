@@ -1,18 +1,28 @@
 # Last.fm last played tracks Rainmeter skin
 A Rainmeter skin that displays the last scrobbled tracks, with variants for up to 18 tracks. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
 
-Credits:
+Credits / Used resources:
 - [Blaise](https://www.deviantart.com/squadrmskin) for ["Last.fm Rainmeter Skin VERSION 2.0"](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568).
 - [Rochak Shukla](https://www.freepik.com/author/rochakshukla) for the ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon used as a "no album" placeholder image.
+- [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI).
+
+ColorPickerUI uses:
+- [CursorColor Plugin](https://forum.rainmeter.net/viewtopic.php?t=23375) by [jsmorley](https://www.rainmeter.net/).
+- [Mouse Plugin](https://github.com/NighthawkSLO/Mouse.dll) by [NightHawkSLO](https://github.com/NighthawkSLO).
+- Segoe Fluent Icons font.
 
 Requirements:
-- Rainmeter v4.5, I've only tested the skin in this version so I've no idea how if it will run in older versions.
+- Tested in Rainmeter v4.5, not sure if it will run in older versions.
 
 How to use:
-- Click the "Click here to set the username, then refresh the skin." text to set the last.fm username. This needs to be done separately for each variant.
-- The background color and transparency can be changed in the .ini files in the option "SolidColor" in the [MeasureBackground] measure.
+- Click the "Click here to set the username, then refresh the skin." text to set the last.fm username.
+- Middle-click the username to change the background color and transparency.
 
 Version history:
+
+1.06 / May 23, 2023
+- Moved the username and background color values into a separate config file.
+- Added a background color selection menu.
 
 1.05 / May 22, 2023
 - Added artist/album/track links to the corresponding fields.
@@ -50,13 +60,13 @@ Version history:
 
 Known issues:
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
-- The username needs to be set for each variant separately. Unfortunately, I don't see how I can resolve this. The original skin asked to input a username 3 times during editing in any variant, for each variant.
-- The variants with more than 5 tracks are not very stable, use them on your own risk.
-- The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them not appear on every single tick but couldn't get rid of them entirely yet.
+- The variants with more than 5 tracks are not very stable, use them at your own risk.
+- The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet.
 
 To potentially do:
+- Merge all variants into a single configurable variant.
+- Switch around mouse actions in the username/"View Profile"/album cover meters.
 - Make a right-aligned version.
 - Make variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
 - Fork different sized versions of the original skin, I only used the small version. Maybe make a smaller sized version.
 - Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my skill and API access level atm.
-- Make the background color modifiable more easily. And/or a separate config file.
