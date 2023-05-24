@@ -80,9 +80,8 @@ ColorPickerUI uses:
 - The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet.
 - The config menu could be better but I'm not much of a designer, might rework it later.
 
-### To possibly do:
+### Ideas for possible future versions:
 - Make a right-aligned version.
 - Make variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
 - Fork different sized versions of the original skin, I only used the small version. Maybe make a smaller sized version.
 - Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my skill and API access level atm.
-- Make the font colors editable...?
