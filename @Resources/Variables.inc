@@ -1,10 +1,12 @@
 [Variables]
-UserName=Click here to set the username, then refresh the skin.
+UserName=Middle-click here to set the username, then refresh the skin.
 BgColor=0,0,0,217
+ActiveFontColor=255,0,0,255
+OtherFontColor=255,255,255,255
 BgSize=313
 DisplayedTracks=5
-
 Track=(<track.*>.*</track>)
+
 Cover1URLLast=default
 Cover2URLLast=default
 Cover3URLLast=default
