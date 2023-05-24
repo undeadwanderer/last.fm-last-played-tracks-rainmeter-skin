@@ -1,7 +1,7 @@
 # Last.fm last played tracks Rainmeter skin
 A Rainmeter skin that displays the last scrobbled tracks, with variants for up to 18 tracks. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
 
-Credits / Used resources:
+### Credits / Used resources:
 - [Blaise](https://www.deviantart.com/squadrmskin) for ["Last.fm Rainmeter Skin VERSION 2.0"](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568).
 - [Rochak Shukla](https://www.freepik.com/author/rochakshukla) for the ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon used as a "no album" placeholder image.
 - [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI).
@@ -11,17 +11,17 @@ ColorPickerUI uses:
 - [Mouse Plugin](https://github.com/NighthawkSLO/Mouse.dll) by [NightHawkSLO](https://github.com/NighthawkSLO).
 - Segoe Fluent Icons font.
 
-Requirements:
+### Requirements:
 - Tested in Rainmeter v4.5, not sure if it will run in older versions.
 
-How to use:
+### How to use:
 - Middle-click the "Click here to set the username, then refresh the skin." text to set the last.fm username.
 - Middle-click the first track image or title to change the number of displayed tracks and background color/transparency.
-- Click the username to go to the profile page.
+- Click the username to go open the profile page in browser.
 - Click the track title or album cover to go to the track page.
-- Click on artist name or album name to go to the artist or album page respectively.
+- Click the artist name or album name to go to the artist or album page respectively.
 
-Version history:
+### Version history:
 
 1.07 / May 23, 2023
 - Reworked the skin, now it has only one variant with a config skin where you can choose how many tracks to show and the background cover. See "how to use" for more information. Older versions with multiple variants are still available in Releases but I don't plan to update them further.
@@ -67,13 +67,13 @@ Version history:
   - Replaced the placeholder icon.
   - Changed the first track's title font color to red.
 
-Known issues:
+### Known issues:
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
 - Displaying more than 5 tracks is not very stable, use those options at your own risk.
 - The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet.
 - The config menu could be better, might rework it later.
 
-To possibly do:
+### To possibly do:
 - Make a right-aligned version.
 - Make variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
 - Fork different sized versions of the original skin, I only used the small version. Maybe make a smaller sized version.
