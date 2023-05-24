@@ -4,7 +4,7 @@ A Rainmeter skin that displays up to 18 last scrobbled tracks. This is a fork of
 ### Credits / Used resources:
 - [Blaise](https://www.deviantart.com/squadrmskin) for ["Last.fm Rainmeter Skin VERSION 2.0"](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568).
 - [Rochak Shukla](https://www.freepik.com/author/rochakshukla) for the ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon used as a "no album" placeholder image.
-- [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI).
+- [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI), Licensed under Creative Commons BY-NC-SA 3.0.
 
 ColorPickerUI uses:
 - [CursorColor Plugin](https://forum.rainmeter.net/viewtopic.php?t=23375) by [jsmorley](https://www.rainmeter.net/).
@@ -15,13 +15,19 @@ ColorPickerUI uses:
 - Tested in Rainmeter v4.5, not sure if it will run in older versions.
 
 ### How to use:
-- Middle-click the "Click here to set the username, then refresh the skin." text to set the last.fm username.
+- Middle-click the "Middle-click here to set the username, then refresh the skin." text to set the last.fm username.
 - Middle-click the first track image or title to change the number of displayed tracks and background color/transparency.
 - Click the username to go open the profile page in browser.
 - Click the track title or album cover to go to the track page.
 - Click the artist name or album name to go to the artist or album page respectively.
 
 ### Version history:
+
+1.1 / May 24, 2023
+- Made text colors customizable.
+- Moved the ColorPickerUI config into the Config folder.
+- Some other minor changes.
+- Version bump because I had to do that with the previous version.
 
 1.07 / May 23, 2023
 - Reworked the skin, now it has only one variant with a config skin where you can choose how many tracks to show and the background cover. See "how to use" for more information. Older versions with multiple variants are still available in Releases but I don't plan to update them further.
@@ -69,9 +75,10 @@ ColorPickerUI uses:
 
 ### Known issues:
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
-- Displaying more than 5 tracks is not very stable, use those options at your own risk.
+- Wasn't able to change the skin refreshing after changing the number of displayed tracks to redrawing because without redrawing case some measures aren't being disabled properly.
+- Displaying more than 5 tracks may not be very stable, use those options at your own risk.
 - The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet.
-- The config menu could be better, might rework it later.
+- The config menu could be better but I'm not much of a designer, might rework it later.
 
 ### To possibly do:
 - Make a right-aligned version.
