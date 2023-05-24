@@ -28,6 +28,7 @@ ColorPickerUI uses:
 - Moved the ColorPickerUI config into the Config folder.
 - Some other minor changes.
 - Version bump because I had to do that with the previous version.
+- Uploaded version 1.061 into a separate branch.
 
 1.07 / May 23, 2023
 - Reworked the skin, now it has only one variant with a config skin where you can choose how many tracks to show and the background cover. See "how to use" for more information. Older versions with multiple variants are still available in Releases but I don't plan to update them further.
