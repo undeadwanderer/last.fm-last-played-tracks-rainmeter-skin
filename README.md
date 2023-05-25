@@ -82,7 +82,6 @@ ColorPickerUI uses:
 ### Known issues:
 - The 'number of tracks' selectors in the config skin aren't changing the color on mouseover or do so only until the next update tick, there seems to be a conflict with IfMatchMode=1 option in the measure that highlights the currently active skin setting.
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
-- ~~Wasn't able to change the skin refreshing after changing the number of displayed tracks to redrawing because without redrawing case some measures aren't being disabled properly.~~
 - Displaying more than 5 tracks may not be very stable, use those options at your own risk.
 - The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet.
 - The config menu could be better but I'm not much of a designer, might rework it later.
