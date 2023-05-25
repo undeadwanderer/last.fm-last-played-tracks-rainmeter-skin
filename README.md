@@ -1,5 +1,5 @@
 # Last.fm last played tracks Rainmeter skin
-A Rainmeter skin that displays up to 18 last scrobbled tracks. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
+A Rainmeter widget that displays up to 18 last scrobbled tracks. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
 
 ### Credits / Used resources:
 - [Blaise](https://www.deviantart.com/squadrmskin) for ["Last.fm Rainmeter Skin VERSION 2.0"](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); Licensed under Creative Commons BY-NC-SA 3.0.
@@ -16,8 +16,8 @@ ColorPickerUI uses:
 
 ### How to use:
 - Middle-click the "Middle-click here to set the username, then refresh the skin." text to set the last.fm username.
-- Middle-click the first track image or title to change the number of displayed tracks and background color/transparency.
-- Click the username to open the profile page in browser.
+- Middle-click the first track image or title to change the number of displayed tracks and the background and text color/transparency.
+- Click the username to open your profile page in browser.
 - Click the track title or album cover to go to the track page.
 - Click the artist name or album name to go to the artist or album page respectively.
 
@@ -33,7 +33,7 @@ ColorPickerUI uses:
 - Made text colors customizable.
 - Moved the ColorPickerUI config into the Config folder.
 - Some other minor changes.
-- Version bump because I had to do that with the previous version.
+- Version bump to 1.1 because I didn't think to do that with the previous version but I really had to.
 
 1.07 / May 23, 2023
 - Reworked the skin, now it has only one variant with a config skin where you can choose how many tracks to show and the background cover. See "how to use" for more information. Older versions with multiple variants are still available in Releases but I don't plan to update them further.
@@ -63,10 +63,11 @@ ColorPickerUI uses:
 - Changed the title/album/artist length limiting method from a string length regex to a meter width limit with string clipping.
 
 1.02 / May 14, 2023
-- Made the first track's font color red if it's the "now playing" track or white if it isn't.
+- The first track's font color is now red if it's currently scrobbling.
 
 1.01 / May 13, 2023
-- Increased the displayed character limit for artist and album tags. First release.
+- Increased the displayed character limit for artist and album tags.
+- First release.
 
 1.0 / May 13, 2023
 - Initial commit.
