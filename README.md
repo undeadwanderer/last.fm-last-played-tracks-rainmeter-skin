@@ -74,6 +74,7 @@ ColorPickerUI uses:
   - Changed the first track's title font color to red.
 
 ### Known issues:
+- The 'number of tracks' selectors in the config skin aren't changing the color on mouseover or do so only until the next update tick, there seems to be a conflict with IfMatchMode in the measure that highlights the currently active variant.
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
 - Wasn't able to change the skin refreshing after changing the number of displayed tracks to redrawing because without redrawing case some measures aren't being disabled properly.
 - Displaying more than 5 tracks may not be very stable, use those options at your own risk.
