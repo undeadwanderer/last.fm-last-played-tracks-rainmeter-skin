@@ -23,6 +23,12 @@ ColorPickerUI uses:
 
 ### Version history:
 
+1.1.1 / May 25, 2023
+- Code cleanup, got rid of deprecated commands.
+- Reduced the number of main skin refreshes. ||Tested again making the main skin to redraw on displayed tracks change instead of refreshing and it seems to disable/enable measures correctly this time around. Maybe I didn't write the DynamicVariables=1 to all affected measures the last time. Also had to set the UpdateDivider option for each meter to stop them loading data when hidden.||
+- Made another, unsuccessful, attempt to get rid of the "url is empty" error.
+- Changed the version numbering method.
+
 1.1 / May 24, 2023
 - Made text colors customizable.
 - Moved the ColorPickerUI config into the Config folder.
@@ -45,7 +51,7 @@ ColorPickerUI uses:
 
 1.04 / May 22, 2023
 - Stopped the skin from downloading a new image every tick if the image url hasn't changed from the previous tick.
-- Split the main regex into smaller regexes for each measure, for optimization. Since this refuces the string indices this might also allow to add support for more tracks in the future.
+- Split the main regex into smaller regexes for each measure, for optimization. Since this reduces the string indices this might also allow to add support for more tracks in the future.
 - Reduced the number of "url is empty" errors (See "Known Issues").
 
 1.031 / May 18, 2023
@@ -76,7 +82,7 @@ ColorPickerUI uses:
 ### Known issues:
 - The 'number of tracks' selectors in the config skin aren't changing the color on mouseover or do so only until the next update tick, there seems to be a conflict with IfMatchMode=1 option in the measure that highlights the currently active skin setting.
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
-- Wasn't able to change the skin refreshing after changing the number of displayed tracks to redrawing because without redrawing case some measures aren't being disabled properly.
+- ~~Wasn't able to change the skin refreshing after changing the number of displayed tracks to redrawing because without redrawing case some measures aren't being disabled properly.~~
 - Displaying more than 5 tracks may not be very stable, use those options at your own risk.
 - The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet.
 - The config menu could be better but I'm not much of a designer, might rework it later.
@@ -86,3 +92,4 @@ ColorPickerUI uses:
 - Make variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
 - Fork different sized versions of the original skin, I only used the small version. Maybe make a smaller sized version.
 - Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my skill and API access level atm.
+- Find a placeholder icon with a better license.
