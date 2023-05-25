@@ -1,15 +1,18 @@
 # Last.fm last played tracks Rainmeter skin
 A Rainmeter widget that displays up to 18 last scrobbled tracks. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
 
-### Credits / Used resources:
+### Credits:
 - [Blaise](https://www.deviantart.com/squadrmskin) for ["Last.fm Rainmeter Skin VERSION 2.0"](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); Licensed under Creative Commons BY-NC-SA 3.0.
-- [Rochak Shukla](https://www.freepik.com/author/rochakshukla) for the ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon used as a "no album" placeholder image; Licensed under FreePik license.
+- [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square); Licensed under CC0.
 - [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI); Licensed under Creative Commons BY-NC-SA 3.0.
 
-ColorPickerUI uses:
+ColorPickerUI uses the following resources:
 - [CursorColor Plugin](https://forum.rainmeter.net/viewtopic.php?t=23375) by [jsmorley](https://www.rainmeter.net/).
 - [Mouse Plugin](https://github.com/NighthawkSLO/Mouse.dll) by [NightHawkSLO](https://github.com/NighthawkSLO).
 - Segoe Fluent Icons font.
+
+Formerly used resources:
+- ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon by [Rochak Shukla](https://www.freepik.com/author/rochakshukla); Licensed under FreePik license.
 
 ### Requirements:
 - Tested in Rainmeter v4.5, not sure if it will run in older versions.
@@ -22,6 +25,9 @@ ColorPickerUI uses:
 - Click the artist name or album name to go to the artist or album page respectively.
 
 ### Version history:
+
+1.1.1.1 / May 25, 2023
+- Changed the placeholder icon to an image under a more free license.
 
 1.1.1 / May 25, 2023
 - Code cleanup, got rid of deprecated commands.
@@ -92,4 +98,3 @@ ColorPickerUI uses:
 - Make variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
 - Fork different sized versions of the original skin, I only used the small version. Maybe make a smaller sized version.
 - Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my skill and API access level atm.
-- Find a placeholder icon with a better license.
