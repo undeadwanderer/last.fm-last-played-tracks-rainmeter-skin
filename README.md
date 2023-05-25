@@ -17,7 +17,7 @@ ColorPickerUI uses:
 ### How to use:
 - Middle-click the "Middle-click here to set the username, then refresh the skin." text to set the last.fm username.
 - Middle-click the first track image or title to change the number of displayed tracks and background color/transparency.
-- Click the username to go open the profile page in browser.
+- Click the username to open the profile page in browser.
 - Click the track title or album cover to go to the track page.
 - Click the artist name or album name to go to the artist or album page respectively.
 
