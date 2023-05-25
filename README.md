@@ -25,7 +25,7 @@ ColorPickerUI uses:
 
 1.1.1 / May 25, 2023
 - Code cleanup, got rid of deprecated commands.
-- Reduced the number of main skin refreshes. ||Tested again making the main skin to redraw on displayed tracks change instead of refreshing and it seems to disable/enable measures correctly this time around. Maybe I didn't write the DynamicVariables=1 to all affected measures the last time. Also had to set the UpdateDivider option for each meter to stop them loading data when hidden.||
+- Reduced the number of main skin refreshes. (Tested again making the main skin to redraw on displayed tracks change instead of refreshing and it seems to disable/enable measures correctly this time around. Maybe I didn't write the DynamicVariables=1 to all affected measures the last time. Also had to set the UpdateDivider option for each meter to stop them loading data when hidden.)
 - Made another, unsuccessful, attempt to get rid of the "url is empty" error.
 - Changed the version numbering method.
 
