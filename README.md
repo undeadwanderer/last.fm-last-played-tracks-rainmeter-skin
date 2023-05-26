@@ -103,3 +103,6 @@ Formerly used resources:
 - Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
 - Fork different-size versions of the original skin, I only used the small version. Maybe make a smaller sized version.
 - Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and API access level.
+
+### Backstory:
+- So basically I used to have Last.fm opened in a separate browser window at all times to be sure that the music is scrobbling correctly (and to remind myself of what I listened to recently) but the page constantly stopped updating the information and that annoyed me to no end. Recently I was reminded of Rainmeter's existence and that I'd downloaded a last.fm "now playing" skin for it a while ago; I installed it and it was a good one but not exactly what I needed. After I looked at the code to set a background (since I needed the widget in on top of other windows instead of on the desktop) I realized that it's possible for me to make a version for more displayed tracks and I did exactly that. If you needed such a widget, enjoy!
