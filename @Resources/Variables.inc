@@ -43,3 +43,9 @@ Track15Disabled=1
 Track16Disabled=1
 Track17Disabled=1
 Track18Disabled=1
+
+TextMeterAlign=Left
+TitleMeterCoords=63
+ArtistMeterCoords=65
+AlbumMeterCoords=66
+ImageMeterCoords=8

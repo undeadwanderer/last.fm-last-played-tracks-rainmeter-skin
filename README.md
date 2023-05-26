@@ -2,7 +2,7 @@
 A Rainmeter widget that displays up to 18 last scrobbled tracks. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
 
 ### Credits:
-- [Blaise](https://www.deviantart.com/squadrmskin) for [Last.fm Rainmeter Skin VERSION 2.0](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); Licensed under Creative Commons BY-NC-SA 3.0.
+- [Blaise](https://www.deviantart.com/squadrmskin) for ["Last.fm Rainmeter Skin VERSION 2.0"](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); Licensed under Creative Commons BY-NC-SA 3.0.
 - [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square); Licensed under CC0.
 - [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI); Licensed under Creative Commons BY-NC-SA 3.0.
 
@@ -19,12 +19,16 @@ Formerly used resources:
 
 ### How to use:
 - Middle-click the "Middle-click here to set the username, then refresh the skin." text to set the last.fm username.
-- Middle-click the first track image or title to change the number of displayed tracks and the background and text color/transparency.
+- Middle-click the first track image or title to change the number of displayed tracks, the background and text colors/transparency, and the alignment of measures.
 - Click the username to open your profile page in browser.
-- Click the track title or album cover to go to the track page.
-- Click the artist name or album name to go to the artist or album page respectively.
+- Click the track title or album cover to open the track page.
+- Click the artist name or album name to open the artist or album page respectively.
 
 ### Version history:
+
+1.1.2 / May 26, 2023
+- Made an option to make the widget right-aligned.
+- Fixed the username variable being written into the main config instead of Variables.inc.
 
 1.1.1.1 / May 25, 2023
 - Changed the placeholder icon to an image under a more free license.
@@ -87,14 +91,15 @@ Formerly used resources:
   - Changed the first track's title font color to red.
 
 ### Known issues:
-- The 'number of tracks' selectors in the config skin aren't changing the color on mouseover or do so only until the next update tick, there seems to be a conflict with IfMatchMode=1 option in the measure that highlights the currently active skin setting.
+- Certain selectors in the config window aren't changing the color on mouseover or do so only until the next update tick, this seems to be a conflict of the mouse over action with IfMatchMode=1 option in the measure that highlights the currently active skin setting.
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
 - Displaying more than 5 tracks may not be very stable, use those options at your own risk.
 - The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet.
 - The config menu could be better but I'm not much of a designer, might rework it later.
 
 ### Ideas for possible future versions:
-- Make a right-aligned version.
-- Make variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
-- Fork different sized versions of the original skin, I only used the small version. Maybe make a smaller sized version.
-- Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my skill and API access level atm.
+- Customizable widget width.
+- Timestamps.
+- Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
+- Fork different-size versions of the original skin, I only used the small version. Maybe make a smaller sized version.
+- Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and API access level.
