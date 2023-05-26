@@ -29,6 +29,7 @@ Formerly used resources:
 1.1.2 / May 26, 2023
 - Made an option to make the widget right-aligned.
 - Fixed the username variable being written into the main config instead of Variables.inc.
+- Setting the username now correctly autorefreshes the widget; I'll update the default value to reflect that later.
 
 1.1.1.1 / May 25, 2023
 - Changed the placeholder icon to an image under a more free license.
