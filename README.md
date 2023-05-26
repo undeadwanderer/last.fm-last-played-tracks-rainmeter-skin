@@ -3,7 +3,7 @@ A Rainmeter widget that displays up to 18 last scrobbled tracks. This is a fork 
 
 ### Credits:
 - [Blaise](https://www.deviantart.com/squadrmskin) for ["Last.fm Rainmeter Skin VERSION 2.0"](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); Licensed under Creative Commons BY-NC-SA 3.0.
-- [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square); Licensed under CC0.
+- [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square); Licensed under CC0 license.
 - [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI); Licensed under Creative Commons BY-NC-SA 3.0.
 
 ColorPickerUI uses the following resources:
