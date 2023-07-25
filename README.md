@@ -1,11 +1,11 @@
 # Last.fm last played tracks Rainmeter skin
 A Rainmeter widget that displays up to 18 last scrobbled tracks. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
-Update 2023-07-14: This repo is no longer maintained, feel free to fork it if you have something to add and if I'll ever make it public.
 
 ### Credits:
-- [Blaise](https://www.deviantart.com/squadrmskin) for [Last.fm Rainmeter Skin VERSION 2.0](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); Licensed under Creative Commons BY-NC-SA 3.0.
-- [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square); Licensed under CC0 license.
-- [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI); Licensed under Creative Commons BY-NC-SA 3.0.
+- [Blaise](https://www.deviantart.com/squadrmskin) for [Last.fm Rainmeter Skin VERSION 2.0](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); CC BY-NC-SA 3.0.
+- [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square); CC0.
+- [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI); CC BY-NC-SA 3.0.
+- balala for the [Lua code for converting the timestamps to local time](https://forum.rainmeter.net/viewtopic.php?t=27547&sid=2c92245dc02acee691f38e567e150788&start=10#p143062), modified by me.
 
 ColorPickerUI uses the following resources:
 - [CursorColor Plugin](https://forum.rainmeter.net/viewtopic.php?t=23375) by [jsmorley](https://www.rainmeter.net/).
@@ -27,10 +27,13 @@ Formerly used resources:
 
 ### Version history:
 
+1.1.3
+- Added timestamps and a lua script to convert them from UTC to the local timezone.
+- Some small code and design tweaks (added lookahead assertions to some of the regexes to reduce errors, added horizontal padding for the text meters so I would need less variables to place them properly (but added more variables for the timestamps), adjusted the vertical coordinates of the meters).
+
 1.1.2 / May 26, 2023
 - Made an option to make the widget right-aligned.
 - Fixed the username variable being written into the main config instead of Variables.inc.
-- Setting the username now correctly autorefreshes the widget; I'll update the default value to reflect that later.
 
 1.1.1.1 / May 25, 2023
 - Changed the placeholder icon to an image under a more free license.
@@ -48,7 +51,7 @@ Formerly used resources:
 - Version bump to 1.1 because I didn't think to do that with the previous version but I really had to.
 
 1.07 / May 23, 2023
-- Reworked the skin, now it has only one variant with a config skin where you can choose how many tracks to show and the background cover. See "how to use" for more information. Older versions with multiple variants are still available in Releases but I don't plan to update them further.
+- Reworked the skin, now it has only one variant with a config skin where you can choose how many tracks to show and the background color. See "how to use" for more information. Older versions with multiple variants are still available in Releases but I don't plan to update them further.
 
 1.061 / May 23, 2023
 - Changed the click actions for username and the first album color, see "How to use" for more information.
@@ -79,7 +82,7 @@ Formerly used resources:
 
 1.01 / May 13, 2023
 - Increased the displayed character limit for artist and album tags.
-- First release.
+- Initial release.
 
 1.0 / May 13, 2023
 - Initial commit.
@@ -95,13 +98,14 @@ Formerly used resources:
 ### Known issues:
 - Certain selectors in the config window aren't changing the color on mouseover or do so only until the next update tick, this seems to be a conflict of the mouse over action with IfMatchMode=1 option in the measure that highlights the currently active skin setting.
 - The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
-- Displaying more than 5 tracks may not be very stable, use those options at your own risk.
-- The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet.
+- Displaying more than 5 tracks might not be very stable, use those options at your own risk.
+- The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet. [May have been fixed in 1.1.3 update]
+- The skin returns a "Regex matching error" when opening the skin without a username set (i.e. on first launch), couldn't get rid of it at the moment.
 - The config menu could be better but I'm not much of a designer, might rework it later.
+- Some other special characters in urls may remain escaped, have only patched those I noticed.
 
 ### Ideas for possible future versions:
 - Customizable widget width.
-- Timestamps.
 - Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
 - Fork different-size versions of the original skin, I only used the small version. Maybe make a smaller sized version.
 - Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and API access level.
