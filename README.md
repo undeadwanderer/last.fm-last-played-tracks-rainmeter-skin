@@ -13,7 +13,7 @@ ColorPickerUI uses the following resources:
 - Segoe Fluent Icons font.
 
 Formerly used resources:
-- ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon by [Rochak Shukla](https://www.freepik.com/author/rochakshukla); Licensed under FreePik license.
+- ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon by [Rochak Shukla](https://www.freepik.com/author/rochakshukla).
 
 ### Requirements:
 - Tested in Rainmeter v4.5, not sure if it will run in older versions.
