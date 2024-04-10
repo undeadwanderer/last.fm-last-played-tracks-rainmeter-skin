@@ -24,6 +24,22 @@ Formerly used resources:
 - Click the track title or album cover to open the track page.
 - Click the artist name or album name to open the artist or album page respectively.
 
+### Known issues:
+- Displaying more than 5 tracks might not be very stable, use those options at your own risk.
+- The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up sometime in the future.
+- The skin stops loading data after too many manual refreshes. This is an issue in the original skin as well. It appears to be a WebParser bug.
+- Album images aren't loading at certain times, not sure what's causing it atm.
+- The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet. [May have been fixed in 1.1.3 update]
+- The skin returns a "Regex matching error" when opening the skin without a username set (i.e. on first launch), couldn't get rid of it at the moment.
+- The config menu could be better but I'm not much of a designer, might rework it later.
+- Some other special characters in urls may remain escaped, have only patched those I noticed.
+
+### Ideas for possible future versions:
+- Clean up the code.
+- Make the skin scaleable.
+- Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height).
+- Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and API access level.
+
 ### Version history:
 
 1.1.4.2 / Mar 29, 2024
@@ -105,22 +121,6 @@ Formerly used resources:
   - Limited the title/artist/album length to 35 characters.
   - Replaced the placeholder icon.
   - Changed the first track's title font color to red.
-
-### Known issues:
-- Displaying more than 5 tracks might not be very stable, use those options at your own risk.
-- The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up sometime in the future.
-- The skin stops loading data after too many manual refreshes. This is an issue in the original skin as well. It appears to be a WebParser bug.
-- Album images aren't loading at certain times, not sure what's causing it atm.
-- The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet. [May have been fixed in 1.1.3 update]
-- The skin returns a "Regex matching error" when opening the skin without a username set (i.e. on first launch), couldn't get rid of it at the moment.
-- The config menu could be better but I'm not much of a designer, might rework it later.
-- Some other special characters in urls may remain escaped, have only patched those I noticed.
-
-### Ideas for possible future versions:
-- Clean up the code.
-- Make the skin scaleable.
-- Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height).
-- Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and API access level.
 
 ### Backstory:
 - So basically I used to have Last.fm opened in a separate browser window at all times to be sure that the music is scrobbling correctly (and to remind myself of what I listened to recently) but the page constantly stopped updating the information and that annoyed me to no end. Recently I've been reminded of Rainmeter's existence and that I downloaded a last.fm "now playing" skin for it a while ago; I installed it and it was a good one but not exactly what I needed. After I looked at the code to set a background (since I needed the widget in on top of other windows instead of on the desktop) I realized that it's possible for me to make a version for more displayed tracks and I did exactly that. If you needed such a widget, enjoy!
