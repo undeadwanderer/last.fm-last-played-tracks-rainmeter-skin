@@ -19,16 +19,27 @@ Formerly used resources:
 - Tested in Rainmeter v4.5, not sure if it will run in older versions.
 
 ### How to use:
-- Middle-click the "Middle-click here to set the username, then refresh the skin." text to set the last.fm username.
-- Middle-click the first track image or title to change the number of displayed tracks, the background and text colors/transparency, and the alignment of measures.
-- Click the username to open your profile page in browser.
+- Middle-click the first track image or title to set up the username, the number of displayed tracks, the background and text colors/transparency, and the alignment of measures.
+- Click the username (if it's set to be displayed) to open your profile page in browser.
 - Click the track title or album cover to open the track page.
 - Click the artist name or album name to open the artist or album page respectively.
 
 ### Version history:
 
-1.1.3
-- Added timestamps and a lua script to convert them from UTC to the local timezone.
+1.1.4.2 / Mar 29, 2024
+- Fixed vertical mobility issues (made vertical coordinates of hideable elements relative).
+
+1.1.4 / August 7, 2023
+- Added an option to disable timestamps
+- Added an option to hide the username
+- Moved the username setup to the config skin, the default username field now gives the directions to the config for full setup.
+- Fixed padding for the artist tag #3.
+- The "number of displayed tracks" and "meter alignment" buttons are now properly changing colors on mouseover.
+- Replaced the lua script for timezone conversion with an in-config method which converts from UNIX timestamps so now the seconds are displayed.
+- Attempted to optimize the code somewhat, it's become bloated and unstable after all the bells and whistles I've added over time.
+
+1.1.3 / July 25, 2023
+- Added timestamps and a lua script to convert them from UTC to the computer's local timezone.
 - Some small code and design tweaks (added lookahead assertions to some of the regexes to reduce errors, added horizontal padding for the text meters so I would need less variables to place them properly (but added more variables for the timestamps), adjusted the vertical coordinates of the meters).
 
 1.1.2 / May 26, 2023
@@ -96,18 +107,19 @@ Formerly used resources:
   - Changed the first track's title font color to red.
 
 ### Known issues:
-- Certain selectors in the config window aren't changing the color on mouseover or do so only until the next update tick, this seems to be a conflict of the mouse over action with IfMatchMode=1 option in the measure that highlights the currently active skin setting.
-- The skin stops loading data after too many manual refreshes. This has been an issue in the original skin as well. It appears to be a WebParser bug.
 - Displaying more than 5 tracks might not be very stable, use those options at your own risk.
+- The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up sometime in the future.
+- The skin stops loading data after too many manual refreshes. This is an issue in the original skin as well. It appears to be a WebParser bug.
+- Album images aren't loading at certain times, not sure what's causing it atm.
 - The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet. [May have been fixed in 1.1.3 update]
 - The skin returns a "Regex matching error" when opening the skin without a username set (i.e. on first launch), couldn't get rid of it at the moment.
 - The config menu could be better but I'm not much of a designer, might rework it later.
 - Some other special characters in urls may remain escaped, have only patched those I noticed.
 
 ### Ideas for possible future versions:
-- Customizable widget width.
-- Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height)
-- Fork different-size versions of the original skin, I only used the small version. Maybe make a smaller sized version.
+- Clean up the code.
+- Make the skin scaleable.
+- Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height).
 - Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and API access level.
 
 ### Backstory:
