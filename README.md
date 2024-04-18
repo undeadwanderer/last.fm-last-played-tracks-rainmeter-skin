@@ -42,6 +42,9 @@ Formerly used resources:
 
 ### Version history:
 
+1.1.4.3 / April 18, 2024
+- Forked the color picker UI and updated it to version 2.1.2: Now when changing element colors the current color is loaded on picker skin initialization instead of a pre-set one; also fixed a typo in Functions.lua.
+
 1.1.4.2 / Mar 29, 2024
 - Fixed vertical mobility issues (made vertical coordinates of hideable elements relative).
 
