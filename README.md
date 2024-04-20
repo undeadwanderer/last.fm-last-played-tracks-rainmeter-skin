@@ -2,6 +2,7 @@
 A Rainmeter widget that displays up to 18 last scrobbled tracks. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
 
 Example screenshot (colors are customizable):
+
 ![large](https://64.media.tumblr.com/e3fa1f01f5fd99d7953c2f695c10b784/6aa9c3f004f12ddc-4c/s2048x3072/f0c245daf88fd0c4161f1062edd4c0796dd400dd.pnj)
 
 ### Credits:
