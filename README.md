@@ -42,7 +42,7 @@ Formerly used resources:
 - Clean up the code.
 - Make the skin scaleable.
 - Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height).
-- Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and API access level.
+- Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and w/o requiring to generate API keys for each new user on their side.
 
 ### Version history:
 
