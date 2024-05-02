@@ -9,7 +9,6 @@ Example screenshot (colors are customizable):
 - [Blaise](https://www.deviantart.com/squadrmskin) for [Last.fm Rainmeter Skin VERSION 2.0](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); licensed under CC BY-NC-SA 3.0.
 - [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square); CC0.
 - [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI); CC BY-NC-SA 3.0.
-- balala for the [Lua code for converting the timestamps to local time](https://forum.rainmeter.net/viewtopic.php?t=27547&sid=2c92245dc02acee691f38e567e150788&start=10#p143062).
 
 ColorPickerUI uses the following resources:
 - [CursorColor Plugin](https://forum.rainmeter.net/viewtopic.php?t=23375) by [jsmorley](https://www.rainmeter.net/).
@@ -18,6 +17,7 @@ ColorPickerUI uses the following resources:
 
 Formerly used resources:
 - ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon by [Rochak Shukla](https://www.freepik.com/author/rochakshukla).
+- [Lua code for converting the timestamps to local time](https://forum.rainmeter.net/viewtopic.php?t=27547&sid=2c92245dc02acee691f38e567e150788&start=10#p143062) by balala.
 
 ### Requirements:
 - Tested in Rainmeter v4.5, not sure if it will run in older versions.
