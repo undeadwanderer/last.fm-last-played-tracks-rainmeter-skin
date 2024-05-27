@@ -1,9 +1,9 @@
 # Last.fm last played tracks Rainmeter skin
-A Rainmeter widget that last scrobbled tracks information from last.fm, currently supports up to 18 items. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
+A Rainmeter widget that last scrobbled tracks information from last.fm, it currently supports up to 18 items. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
 
 Example screenshot (colors are customizable):
 
-![large](https://64.media.tumblr.com/e3fa1f01f5fd99d7953c2f695c10b784/6aa9c3f004f12ddc-4c/s2048x3072/f0c245daf88fd0c4161f1062edd4c0796dd400dd.pnj)
+![image](https://github.com/undeadwanderer/last.fm-last-played-tracks-rainmeter-skin/assets/51511863/8f139685-f335-4847-a460-fc176cac7934)
 
 ### Requirements:
 - Tested in Rainmeter v4.5, not sure if it will run in older versions.
