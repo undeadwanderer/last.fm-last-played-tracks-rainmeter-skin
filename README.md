@@ -49,7 +49,8 @@ Formerly used resources:
 ```
 1.1.4.3 / April 18, 2024
 • Updated ColorPickerUI to version 2.1.2 of my fork.
-  • Now when changing element colors the current color is loaded on picker skin initialization instead of a pre-set one.
+  • Now when changing element colors the current color is loaded on picker skin initialization
+    instead of a pre-set one.
   • Fixed a typo in Functions.lua.
 
 1.1.4.2 / Mar 29, 2024
@@ -58,15 +59,21 @@ Formerly used resources:
 1.1.4 / August 7, 2023
 • Added an option to disable timestamps
 • Added an option to hide the username
-• Moved the username setup to the config skin, the default username field now gives the directions to the config for full setup.
+• Moved the username setup to the config skin, the default username field now gives
+  the directions to the config for full setup.
 • Fixed padding for the artist tag #3.
-• The "number of displayed tracks" and "meter alignment" buttons are now properly changing colors on mouseover.
-• Replaced the lua script for timezone conversion with an in-config method which converts from UNIX timestamps so now the seconds are displayed.
-• Attempted to optimize the code somewhat, it's become bloated and unstable after all the bells and whistles I've added over time.
+• The "number of displayed tracks" and "meter alignment" buttons are now properly
+  changing colors on mouseover.
+• Replaced the lua script for timezone conversion with an in-config method
+  which converts from UNIX timestamps so now the seconds are displayed.
+• Attempted to optimize the code somewhat, it's become bloated and unstable
+  after all the bells and whistles I've added over time.
 
 1.1.3 / July 25, 2023
 • Added timestamps and a lua script to convert them from UTC to the computer's local timezone.
-• Some small code and design tweaks (added lookahead assertions to some of the regexes to reduce errors, added horizontal padding for the text meters so I would need less variables to place them properly (but added more variables for the timestamps), adjusted the vertical coordinates of the meters).
+• Some small code and design tweaks (added lookahead assertions to some of the regexes
+  to reduce errors, added horizontal padding for the text meters so I would need less variables
+  to place them properly (but added more variables for the timestamps), adjusted the vertical coordinates of the meters).
 
 1.1.2 / May 26, 2023
 • Made an option to make the widget right-aligned.
@@ -77,7 +84,11 @@ Formerly used resources:
 
 1.1.1 / May 25, 2023
 • Code cleanup, got rid of deprecated commands.
-• Reduced the number of main skin refreshes. (Tested again making the main skin to redraw on displayed tracks change instead of refreshing and it seems to disable/enable measures correctly this time around. Maybe I didn't write the DynamicVariables=1 to all affected measures the last time. Also had to set the UpdateDivider option for each meter to stop them loading data when hidden.)
+• Reduced the number of main skin refreshes.
+  (Tested again making the main skin to redraw on displayed tracks change instead of refreshing
+  and it seems to disable/enable measures correctly this time around. Maybe I didn't write
+  the DynamicVariables=1 to all affected measures the last time. Also had to set the UpdateDivider
+  option for each meter to stop them loading data when hidden.)
 • Made another, unsuccessful, attempt to get rid of the "url is empty" error.
 • Changed the version numbering method.
 
@@ -88,7 +99,9 @@ Formerly used resources:
 • Version bump to 1.1 because I didn't think to do that with the previous version but I really had to.
 
 1.07 / May 23, 2023
-• Reworked the skin, now it has only one variant with a config skin where you can choose how many tracks to show and the background color. See "how to use" for more information. Older versions with multiple variants are still available in Releases but I don't plan to update them further.
+• Reworked the skin, now it has only one variant with a config skin where you can choose how many tracks
+  to show and the background color. See "how to use" for more information. Older versions with multiple variants
+  are still available in Releases but I don't plan to update them further.
 
 1.061 / May 23, 2023
 • Changed the click actions for username and the first album color, see "How to use" for more information.
@@ -103,14 +116,17 @@ Formerly used resources:
 
 1.04 / May 22, 2023
 • Stopped the skin from downloading a new image every tick if the image url hasn't changed from the previous tick.
-• Split the main regex into smaller regexes for each measure, for optimization. Since this reduces the string indices this might also allow to add support for more tracks in the future.
+• Split the main regex into smaller regexes for each measure, for optimization. Since this reduces the string indices
+  this might also allow to add support for more tracks in the future.
 • Reduced the number of "url is empty" errors (See "Known Issues").
 
 1.031 / May 18, 2023
 • Bug fix (Missing album art in track 12).
 
 1.03 / May 18, 2013
-• Made variants for 15, 16, 17 tracks (1080p screen minus taskbar), and 18 tracks (the maximum that fits into a 1080p screen). Not sure if I can do more tracks since there's no way for me to test it plus there's a limit in the WebParser plugin for the number of parsed strings and I have no knowliedge of LUA.
+• Made variants for 15, 16, 17 tracks (1080p screen minus taskbar), and 18 tracks (the maximum that fits into a 1080p screen).
+  Not sure if I can do more tracks since there's no way for me to test it plus there's a limit in the WebParser plugin for the
+  number of parsed strings and I have no knowliedge of LUA.
 • The skin now fetches higher res album images.
 • Changed the title/album/artist length limiting method from a string length regex to a meter width limit with string clipping.
 
