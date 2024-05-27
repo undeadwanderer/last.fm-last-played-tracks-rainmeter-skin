@@ -5,6 +5,31 @@ Example screenshot (colors are customizable):
 
 ![large](https://64.media.tumblr.com/e3fa1f01f5fd99d7953c2f695c10b784/6aa9c3f004f12ddc-4c/s2048x3072/f0c245daf88fd0c4161f1062edd4c0796dd400dd.pnj)
 
+### Requirements:
+- Tested in Rainmeter v4.5, not sure if it will run in older versions.
+
+### How to use:
+- Middle-click the first track image or title to set up the username, the number of displayed tracks, the background and text colors/transparency, and the alignment of measures.
+- Click the username (if it's set to be displayed) to open your profile page in a browser.
+- Click the track title or album cover to open the track page.
+- Click the artist name or album name to open the artist or album page respectively.
+
+### Known issues:
+- Displaying more than 5 tracks might not be very stable, use those options at your own risk.
+- The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up/optimization sometime in the future.
+- The skin stops loading data after too many manual refreshes. It appears to be a WebParser bug however.
+- Album images aren't loading at certain times, not sure what's causing it atm.
+- The skin returns a "url is empty" error for the album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet. [May have been fixed in 1.1.3 update]
+- The skin returns a "Regex matching error" when opening the skin without a username set (i.e. on first launch), couldn't get rid of it at the moment.
+- The config menu could be better but I'm not much of a designer, might rework it later.
+- Some other special characters in urls may remain escaped, have only patched those I noticed.
+
+### Ideas for possible future versions:
+- Clean up the code.
+- Make the skin scaleable.
+- Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height).
+- Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and w/o requiring to generate API keys for each new user on their side.
+
 ### Credits:
 - [Blaise](https://www.deviantart.com/squadrmskin) for [Last.fm Rainmeter Skin VERSION 2.0](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); licensed under CC BY-NC-SA 3.0.
 - [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square); CC0.
@@ -18,31 +43,6 @@ ColorPickerUI uses the following resources:
 Formerly used resources:
 - ["Abstract wave halftone background"](https://www.freepik.com/free-vector/abstract-wave-halftone-background_23214995.htm) icon by [Rochak Shukla](https://www.freepik.com/author/rochakshukla).
 - [Lua code for converting the timestamps to local time](https://forum.rainmeter.net/viewtopic.php?t=27547&sid=2c92245dc02acee691f38e567e150788&start=10#p143062) by balala.
-
-### Requirements:
-- Tested in Rainmeter v4.5, not sure if it will run in older versions.
-
-### How to use:
-- Middle-click the first track image or title to set up the username, the number of displayed tracks, the background and text colors/transparency, and the alignment of measures.
-- Click the username (if it's set to be displayed) to open your profile page in browser.
-- Click the track title or album cover to open the track page.
-- Click the artist name or album name to open the artist or album page respectively.
-
-### Known issues:
-- Displaying more than 5 tracks might not be very stable, use those options at your own risk.
-- The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up sometime in the future.
-- The skin stops loading data after too many manual refreshes. This is an issue in the original skin as well. It appears to be a WebParser bug.
-- Album images aren't loading at certain times, not sure what's causing it atm.
-- The skin returns a "url is empty" error for album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet. [May have been fixed in 1.1.3 update]
-- The skin returns a "Regex matching error" when opening the skin without a username set (i.e. on first launch), couldn't get rid of it at the moment.
-- The config menu could be better but I'm not much of a designer, might rework it later.
-- Some other special characters in urls may remain escaped, have only patched those I noticed.
-
-### Ideas for possible future versions:
-- Clean up the code.
-- Make the skin scaleable.
-- Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height).
-- Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and w/o requiring to generate API keys for each new user on their side.
 
 ### Version history:
 
@@ -73,7 +73,8 @@ Formerly used resources:
 • Added timestamps and a lua script to convert them from UTC to the computer's local timezone.
 • Some small code and design tweaks (added lookahead assertions to some of the regexes
   to reduce errors, added horizontal padding for the text meters so I would need less variables
-  to place them properly (but added more variables for the timestamps), adjusted the vertical coordinates of the meters).
+  to place them properly (but added more variables for the timestamps),
+  adjusted the vertical coordinates of the meters).
 
 1.1.2 / May 26, 2023
 • Made an option to make the widget right-aligned.
@@ -100,8 +101,8 @@ Formerly used resources:
 
 1.07 / May 23, 2023
 • Reworked the skin, now it has only one variant with a config skin where you can choose how many tracks
-  to show and the background color. See "how to use" for more information. Older versions with multiple variants
-  are still available in Releases but I don't plan to update them further.
+  to show and the background color. See "how to use" for more information. Older versions with
+  multiple variants are still available in Releases but I don't plan to update them further.
 
 1.061 / May 23, 2023
 • Changed the click actions for username and the first album color, see "How to use" for more information.
@@ -124,9 +125,9 @@ Formerly used resources:
 • Bug fix (Missing album art in track 12).
 
 1.03 / May 18, 2013
-• Made variants for 15, 16, 17 tracks (1080p screen minus taskbar), and 18 tracks (the maximum that fits into a 1080p screen).
-  Not sure if I can do more tracks since there's no way for me to test it plus there's a limit in the WebParser plugin for the
-  number of parsed strings and I have no knowliedge of LUA.
+• Made variants for 15, 16, 17 tracks (1080p screen minus taskbar), and 18 tracks (the maximum that fits into a
+  1080p screen). Not sure if I can do more tracks since there's no way for me to test it plus there's a limit
+  in the WebParser plugin for the number of parsed strings and I have no knowliedge of LUA.
 • The skin now fetches higher res album images.
 • Changed the title/album/artist length limiting method from a string length regex to a meter width limit with string clipping.
 
