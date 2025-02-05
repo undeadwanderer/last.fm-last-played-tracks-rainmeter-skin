@@ -16,10 +16,10 @@ Example screenshot (colors are customizable):
 
 ### Known issues:
 - Displaying more than 5 tracks might not be very stable, use those options at your own risk.
-- The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up/optimization sometime in the future.
+  - The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up/optimization sometime in the future.
 - The skin stops loading data after too many manual refreshes. It appears to be a WebParser bug however.
-- Album images aren't loading at certain times, not sure what's causing it atm. [May have been fixed as of 1.1.4.4]
-- The skin returns a "url is empty" error for the album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet. [May have been fixed in 1.1.3 update]
+- ~~Album images aren't loading at certain times, not sure what's causing it atm.~~ [May have been fixed as of 1.1.4.4]
+- ~~The skin returns a "url is empty" error for the album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet.~~ [May have been fixed as of 1.1.3]
 - The skin returns a "Regex matching error" when opening the skin without a username set (i.e. on first launch), couldn't get rid of it at the moment.
 - The config menu could be better but I'm not much of a designer, might rework it later.
 - Some other special characters in urls may remain escaped, have only patched those I noticed.
