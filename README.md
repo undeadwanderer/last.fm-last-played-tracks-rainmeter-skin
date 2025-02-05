@@ -18,7 +18,7 @@ Example screenshot (colors are customizable):
 - Displaying more than 5 tracks might not be very stable, use those options at your own risk.
 - The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up/optimization sometime in the future.
 - The skin stops loading data after too many manual refreshes. It appears to be a WebParser bug however.
-- Album images aren't loading at certain times, not sure what's causing it atm.
+- Album images aren't loading at certain times, not sure what's causing it atm. [May have been fixed as of 1.1.4.4]
 - The skin returns a "url is empty" error for the album cover measures when loading an albumless track, I've managed to get them to not appear on every single tick but couldn't get rid of them entirely yet. [May have been fixed in 1.1.3 update]
 - The skin returns a "Regex matching error" when opening the skin without a username set (i.e. on first launch), couldn't get rid of it at the moment.
 - The config menu could be better but I'm not much of a designer, might rework it later.
@@ -27,12 +27,12 @@ Example screenshot (colors are customizable):
 ### Ideas for possible future versions:
 - Clean up the code.
 - Make the skin scaleable.
-- Variants for other track counts (I only have 1080p displays available so I can't test the variants that exceed that height).
+- Variants for other track numbers (I only have 1080p displays available so I can't test the variants that exceed that height).
 - Looking into the possibility of implementing the "love track" button but it doesn't seem possible w/ my current skill and w/o requiring to generate API keys for each new user on their side.
 
 ### Credits:
 - [Blaise](https://www.deviantart.com/squadrmskin) for [Last.fm Rainmeter Skin VERSION 2.0](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); licensed under CC BY-NC-SA 3.0.
-- [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square); CC0.
+- [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square) and [Music Disc With Black Details SVG](https://www.svgrepo.com/svg/20342/music-disc-with-black-details); CC0.
 - [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI); CC BY-NC-SA 3.0.
 
 ColorPickerUI uses the following resources:
@@ -47,7 +47,11 @@ Formerly used resources:
 ### Version history:
 
 ```
-1.1.4.3 / April 18, 2024
+1.1.4.4 / Feb 5, 2025
+• Added a placeholder icon for coverless albums to match the "no album" icon somewhat.
+• Hopefully fixed wrong album covers loading for tracks.
+
+1.1.4.3 / Apr 18, 2024
 • Updated ColorPickerUI to version 2.1.2 of my fork.
   • Now when changing element colors the current color is loaded on picker skin initialization
     instead of a pre-set one.
