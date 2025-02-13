@@ -15,7 +15,7 @@ Example screenshot (colors are customizable):
 - Click the artist name or album name to open the artist or album page respectively.
 
 ### Known issues:
-- [First track's timestamp still displays even with timestamps turned off](https://github.com/undeadwanderer/last.fm-last-played-tracks-rainmeter-skin/issues/1)
+- ~~[First track's timestamp still displays even with timestamps turned off](https://github.com/undeadwanderer/last.fm-last-played-tracks-rainmeter-skin/issues/1)~~ [Should be fixed as of 1.1.4.5]
 - Displaying more than 5 tracks might not be very stable, use those options at your own risk.
   - The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up/optimization sometime in the future.
 - The skin stops loading data after too many manual refreshes. It appears to be a WebParser bug however.
@@ -48,6 +48,9 @@ Formerly used resources:
 ### Version history:
 
 ```
+1.1.4.5 / Feb 13, 2025
+• The rogue timestamp issue should be fixed now.
+
 1.1.4.4 / Feb 5, 2025
 • Added a placeholder icon for coverless albums to match the "no album" icon somewhat.
 • Hopefully fixed wrong album covers loading for tracks.
