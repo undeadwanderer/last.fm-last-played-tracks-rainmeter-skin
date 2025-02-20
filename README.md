@@ -1,9 +1,9 @@
-# Last.fm last played tracks Rainmeter skin
+# Last.fm last played tracks (Rainmeter skin)
 A Rainmeter widget that fetches the last scrobbled tracks information from last.fm. Currently supports up to 18 items. This is a fork of "Last.fm Rainmeter Skin VERSION 2.0" (a.k.a. "Watcha listenin' 2") by Blaise.
 
 Example screenshot (colors are customizable):
 
-![image](https://github.com/undeadwanderer/last.fm-last-played-tracks-rainmeter-skin/assets/51511863/8f139685-f335-4847-a460-fc176cac7934)
+![a screenshot of an empty desktop with the skin open](https://github.com/undeadwanderer/last.fm-last-played-tracks-rainmeter-skin/assets/51511863/8f139685-f335-4847-a460-fc176cac7934)
 
 ### Requirements:
 - Tested in Rainmeter v4.5, not sure if it will run in older versions.
@@ -16,10 +16,10 @@ Example screenshot (colors are customizable):
 
 ### Known issues:
 - Displaying more than 5 tracks might not be very stable, use those options at your own risk.
-  - The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up/optimization sometime in the future.
+  - The code has become increasingly unstable, been experiencing Rainmeter crashes after refreshing the skin and album covers loading incorrectly or failing to load until Rainmeter restart. May work on a code clean-up/optimization (or a complete rewrite) sometime in the future.
 - The skin stops loading data after too many manual refreshes. It appears to be a WebParser bug however.
 - The skin returns a "Regex matching error" when opening the skin without a username set (i.e. on first launch), couldn't get rid of it at the moment.
-- The config menu could be better but I'm not much of a designer, might rework it later.
+- The config menu (and the ways to open it) could be better but I'm not much of a designer, might rework it later.
 - Some other special characters in urls may remain escaped, have only patched those I noticed.
 - ~~[First track's timestamp still displays even with timestamps turned off](https://github.com/undeadwanderer/last.fm-last-played-tracks-rainmeter-skin/issues/1)~~ [Should be fixed as of 1.1.4.5]
 - ~~[Album images aren't loading at certain times, not sure what's causing it atm.](https://github.com/undeadwanderer/last.fm-last-played-tracks-rainmeter-skin/issues/2)~~ [May have been fixed as of 1.1.4.4]
