@@ -35,6 +35,7 @@ Example screenshot (colors are customizable):
 - [Blaise](https://www.deviantart.com/squadrmskin) for [Last.fm Rainmeter Skin VERSION 2.0](https://www.deviantart.com/squadrmskin/art/Last-fm-Rainmeter-Skin-VERSION-2-0-590438568); licensed under CC BY-NC-SA 3.0.
 - [SVG Repo](https://www.svgrepo.com) for [Music Note Symbol In A Rounded Square 2](https://www.svgrepo.com/svg/151215/music-note-symbol-in-a-rounded-square) and [Music Disc With Black Details SVG](https://www.svgrepo.com/svg/20342/music-disc-with-black-details); CC0.
 - [Deathcrafter](https://github.com/deathcrafter) for [ColorPickerUI](https://github.com/deathcrafter/ColorPickerUI); CC BY-NC-SA 3.0.
+- DearMary for the wallpaper art in the example screenshot.
 
 ColorPickerUI uses the following resources:
 - [CursorColor Plugin](https://forum.rainmeter.net/viewtopic.php?t=23375) by [jsmorley](https://www.rainmeter.net/).
